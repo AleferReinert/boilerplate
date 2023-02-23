@@ -10,7 +10,6 @@ export default {
   }
 } as ComponentMeta<typeof Main>
 
-
 // Story Basic
 export const Basic: ComponentStory<typeof Main> = (args) => <Main {...args} />
 Basic.args = {
