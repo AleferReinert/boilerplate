@@ -1,6 +1,6 @@
 # Boilerplate
 
-Boilerplate utilizing React, Next.js and TypeScript.
+Boilerplate utilizing React, Next.js, TypeScript, Styled Components and Storybook.
 
 ## Development
 
@@ -11,10 +11,10 @@ yarn install
 # Run the server:
 yarn dev
 
-# Run Storybook:
+# Run the Storybook:
 yarn storybook
 
-# Running tests:
+# Watching tests:
 yarn test-storybook --watch
 
 # Create new component:
