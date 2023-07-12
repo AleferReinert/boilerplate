@@ -13,7 +13,7 @@ const theme = {
       light: 300,
       normal: 400,
       semibold: 500,
-      bold: 600,
+      bold: 600
     },
     sizes: {
       xxsmall: '1rem',
@@ -22,7 +22,7 @@ const theme = {
       medium: '1.6rem',
       large: '1.8rem',
       xlarge: '2rem',
-      xxlarge: '2.8rem',
+      xxlarge: '2.8rem'
     }
   },
   colors: {
