@@ -2,6 +2,7 @@ import type { StoryObj, Meta } from '@storybook/react'
 import { within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
 import ExampleComponent from './Example'
+import theme from '../../styles/theme'
 
 const meta: Meta<typeof ExampleComponent> = {
   title: 'Components/Example',
@@ -18,7 +19,8 @@ export const Example: Story = {
     const title = canvas.getByRole('heading', { name: /example/i })
 
     step('Render heading', () => {
-      expect(title).toBeInTheDocument()
+      expect(title).not.toBeInTheDocument()
+      expect(title).toHaveStyle({ 'font-family': theme.font.family })
     })
   }
 }
