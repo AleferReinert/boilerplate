@@ -1,12 +1,17 @@
 {
-  "name": "aleferreinert",
+  "name": "boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "plop": "plop",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test-storybook": "test-storybook",
+    "prettier": "prettier . --write"
   },
   "dependencies": {
     "@types/node": "20.4.1",
@@ -17,6 +22,22 @@
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^6.0.3",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-interactions": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/jest": "^0.1.0",
+    "@storybook/nextjs": "^7.0.26",
+    "@storybook/react": "^7.0.26",
+    "@storybook/test-runner": "^0.11.0",
+    "@storybook/testing-library": "^0.2.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "plop": "^3.1.2",
+    "prettier": "3.0.0",
+    "storybook": "^7.0.26"
   }
 }
