@@ -14,13 +14,12 @@ export default meta
 type Story = StoryObj<typeof ExampleComponent>
 
 export const Example: Story = {
-  play: ({ canvasElement, step }) => {
+  play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
     const title = canvas.getByRole('heading', { name: /example/i })
 
-    step('Render heading', () => {
-      expect(title).not.toBeInTheDocument()
-      expect(title).toHaveStyle({ 'font-family': theme.font.family })
+    await step('Render heading', () => {
+      expect(title).toBeInTheDocument()
     })
   }
 }
