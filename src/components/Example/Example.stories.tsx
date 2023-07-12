@@ -15,9 +15,10 @@ type Story = StoryObj<typeof ExampleComponent>
 export const Example: Story = {
   play: ({ canvasElement, step }) => {
     const canvas = within(canvasElement)
+    const title = canvas.getByRole('heading', { name: /example/i })
 
     step('Render heading', () => {
-      expect(canvas.getByRole('heading')).toBeInTheDocument()
+      expect(title).toBeInTheDocument()
     })
   }
 }
